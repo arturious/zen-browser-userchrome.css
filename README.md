@@ -10,4 +10,4 @@ Custom userChrome.css for Zen Browser.
 * **Width Tweak**: Limits maximum width of the URL bar to `600px` and centers it on the toolbar.
 
 ## Installation
-Link or copy `zen-browser-userchrome.css` as `userChrome.css` into your Zen Browser profile's `chrome` directory.
+Link or copy `userChrome.css` into your Zen Browser profile's `chrome` directory.
