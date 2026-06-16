@@ -74,6 +74,7 @@
   --arrowpanel-background: #202020 !important;
   --arrowpanel-color: #f2f2f2 !important;
   --arrowpanel-border-color: rgba(255, 255, 255, 0.14) !important;
+  --arrowpanel-border-radius: 16px !important;
 }
 
 panel,
@@ -90,7 +91,13 @@ panelmultiview,
   -moz-appearance: none !important;
   background: #202020 !important;
   background-color: #202020 !important;
+  border-radius: 16px !important;
   color: #f2f2f2 !important;
+  font-family: Verdana, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  overflow: hidden !important;
+  clip-path: inset(0 round 16px) !important;
 }
 
 .panel-viewstack,
@@ -98,6 +105,7 @@ panelmultiview,
 .panel-header,
 .panel-footer {
   background: transparent !important;
+  border-radius: 16px !important;
 }
 
 toolbarbutton.subviewbutton:hover,
@@ -105,4 +113,14 @@ menu[_moz-menuactive="true"],
 menuitem[_moz-menuactive="true"] {
   background-color: rgba(255, 255, 255, 0.12) !important;
   color: #ffffff !important;
+}
+
+panel toolbarbutton,
+panel label,
+panel description,
+menupopup menu,
+menupopup menuitem {
+  font-family: Verdana, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
 }
