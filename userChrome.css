@@ -59,3 +59,19 @@
 #translations-button {
   display: none !important;
 }
+
+/* Отключить увеличение (выскакивание) адресной строки при фокусе (Cmd+T) */
+#urlbar[breakout][breakout-extend] {
+  top: 0px !important;
+  left: 0px !important;
+  width: 100% !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  box-shadow: none !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+  height: var(--urlbar-height) !important;
+  padding: 0px !important;
+}
