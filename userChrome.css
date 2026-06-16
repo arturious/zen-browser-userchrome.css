@@ -57,7 +57,7 @@
 
 /* Уменьшить длину адресной строки (urlbar) и центрировать её */
 #urlbar-container {
-  max-width: 400px !important; /* Здесь можно изменить ширину на любое значение, например 500px или 50% */
+  width: 400px !important; /* Задаем фиксированную ширину, чтобы строка не сжималась */
   margin-left: auto !important;
   margin-right: auto !important;
 }
