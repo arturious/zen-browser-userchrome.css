@@ -54,10 +54,21 @@
   color: #ffffff !important;
   opacity: 1 !important;
 }
-
 /* Уменьшить длину адресной строки (urlbar) и центрировать её */
 #urlbar-container {
   width: 400px !important; /* Задаем фиксированную ширину, чтобы строка не сжималась */
+  min-width: 400px !important;
+  max-width: 400px !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+#urlbar {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+/* Скрыть кнопку перевода (translations) в адресной строке */
+#translations-button {
+  display: none !important;
 }
