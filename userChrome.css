@@ -56,3 +56,13 @@
 #translations-button {
   display: none !important;
 }
+
+/* Скрыть звездочку (добавление в закладки) в адресной строке */
+#star-button-box {
+  display: none !important;
+}
+
+/* Скрыть иконки (favicons) закладок на панели закладок */
+#PlacesToolbarItems .bookmark-item .toolbarbutton-icon {
+  display: none !important;
+}
