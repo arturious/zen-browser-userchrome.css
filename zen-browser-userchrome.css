@@ -1,0 +1,63 @@
+/*
+ * Zen Browser - Custom CSS (userChrome.css)
+ * 
+ * Вы можете добавлять сюда свои CSS-стили для изменения интерфейса браузера.
+ * После каждого изменения необходимо перезапускать браузер.
+ */
+
+/* Пример (раскомментируйте, чтобы проверить работу): */
+/*
+.tabbrowser-tab[selected] {
+    font-weight: bold !important;
+}
+*/
+
+/* Выравнивание текста в адресной строке по центру и уменьшение шрифта */
+#urlbar-input,
+.urlbar-input-container {
+  text-align: center !important;
+  font-size: 12px !important;
+}
+
+/* Скрыть индикатор масштаба в адресной строке (например, 90%) */
+#urlbar-zoom-button {
+  display: none !important;
+}
+
+/* Сделать фон адресной строки черным */
+:root {
+  --zen-urlbar-background: #000000 !important;
+}
+
+#zen-appcontent-navbar-container,
+#navigator-toolbox,
+#nav-bar,
+#urlbar,
+#urlbar-background,
+.urlbar-background,
+#urlbar-input-container,
+.urlbar-input-container,
+#urlbar-input,
+.urlbar-input-box,
+.urlbar-input {
+  background-color: #000000 !important;
+  background: #000000 !important;
+  border-color: #000000 !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+  backdrop-filter: none !important;
+} /* Сделать иконки внутри адресной строки яркими (чтобы они не сливались с черным фоном) */
+#urlbar-input-container image,
+#urlbar-input-container .urlbar-icon,
+#urlbar-input-container toolbarbutton {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Уменьшить длину адресной строки (urlbar) и центрировать её */
+#urlbar-container {
+  max-width: 400px !important; /* Здесь можно изменить ширину на любое значение, например 500px или 50% */
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
