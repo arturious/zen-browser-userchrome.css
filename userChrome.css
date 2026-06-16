@@ -66,3 +66,43 @@
 #PlacesToolbarItems .bookmark-item .toolbarbutton-icon {
   display: none !important;
 }
+
+/* Вернуть фон popover/popup при widget.macos.native-popovers = false */
+:root {
+  --panel-background: #202020 !important;
+  --panel-color: #f2f2f2 !important;
+  --arrowpanel-background: #202020 !important;
+  --arrowpanel-color: #f2f2f2 !important;
+  --arrowpanel-border-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+panel,
+menupopup,
+panelview,
+panelmultiview,
+.panel-arrowcontent,
+#appMenu-popup,
+#appMenu-popup panelview,
+#appMenu-protonMainView,
+#widget-overflow,
+#customizationui-widget-panel {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  background: #202020 !important;
+  background-color: #202020 !important;
+  color: #f2f2f2 !important;
+}
+
+.panel-viewstack,
+.panel-subview-body,
+.panel-header,
+.panel-footer {
+  background: transparent !important;
+}
+
+toolbarbutton.subviewbutton:hover,
+menu[_moz-menuactive="true"],
+menuitem[_moz-menuactive="true"] {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
